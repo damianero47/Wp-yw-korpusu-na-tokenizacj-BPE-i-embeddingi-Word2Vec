@@ -1,8 +1,11 @@
 # Sprawozdanie laboratoryjne
 
 **Przedmiot:** Uczenie głębokie w systemach rozpoznawania i przetwarzania mowy
+
 **Zajęcia nr / temat:** 5 — Wpływ korpusu na tokenizację BPE i embeddingi Word2Vec
-**Autor / grupa:** Damian Skorupa / …
+
+**Autor / grupa:** Damian Skorupa / GL03
+
 **Data:** 12.11.2026
 
 ## 1. Cel ćwiczenia
@@ -11,7 +14,7 @@ Na własnym korpusie zbadano wpływ rozmiaru słownika BPE na podział form flek
 
 ## 2. Metoda i implementacja
 
-**Narzędzia:** `tokenizers` (BPE, `Whitespace`), `gensim` (Word2Vec), `scikit-learn` (PCA), `numpy`, `matplotlib`. Kod: notatnik `lab05_zadanie_zamek.ipynb`.
+**Narzędzia:** `tokenizers` (BPE, `Whitespace`), `gensim` (Word2Vec), `scikit-learn` (PCA), `numpy`, `matplotlib`. 
 
 **Korpus:** 60 różnych zdań ułożonych na potrzeby zadania, 3 pule po 20: *budowla* i *mechanizm* (forma „zamek” raz w każdym zdaniu) oraz *bez badanego wyrazu*. Razem 419 słów, 242 różne. Przygotowanie tekstu: małe litery, usunięcie interpunkcji, podział po spacjach.
 
@@ -63,7 +66,8 @@ def trenuj_bpe(vocab_size):
 
 **PCA (wariant 1) i średni cosinus:**
 
-![Rzut PCA wariantu 1](wykres1.png)
+<img width="764" height="563" alt="wykres1" src="https://github.com/user-attachments/assets/72deebb9-c340-4ba2-b63a-8584600bbfef" />
+
 
 | Pary | Liczba par | Średni cos |
 |---|---|---|
