@@ -39,6 +39,8 @@ def trenuj_bpe(vocab_size):
     return tk
 ```
 
+## LINK DO GITHUBA https://github.com/damianero47/Wp-yw-korpusu-na-tokenizacj-BPE-i-embeddingi-Word2Vec
+
 ## 3. Wyniki
 
 **Hipoteza BPE:** większy słownik skróci podział form widzianych (do 1 tokenu), a dla niewidzianych spadek będzie mały.
